@@ -21,7 +21,8 @@ An AI program jetson-inference is utilized to recognize our cat through a camera
 - Upon cat caught on camera, an email notification is sent to user.
 - Upon cat leaving the sight of camera, an email notification is sent to user.
 - Output CSV file recording the times when cat enters and exits the litterbox.
-
+*A Sample of the CSV Data:*
+*TO BE ATTACHED*
 #### Set up a data pipeline that watches new data and load it to a database. (diagram)
 #### Build a web app that will present the data (Provide a link after deploying the web app?)
 
