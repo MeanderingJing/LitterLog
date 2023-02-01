@@ -13,6 +13,7 @@ An AI program jetson-inference is utilized to recognize our cat through a camera
 
 #### A program that uses image recognition to monitor the cat and log the data whenever the cat goes to the bathroom (diagram)
 **Device used**: [The NVIDIA® Jetson Nano™ Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write)
+
 **Dependent**: [jetson-inference library](https://github.com/dusty-nv/jetson-inference)
 ##### What does this program do?
 *Diagram to be attached*
