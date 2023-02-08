@@ -30,7 +30,7 @@ TO DO: UPLOAD the catWatcher Python code.
 ### Step 2: Set up a data pipeline that watches new data and load it to a database. (diagram)
 #### What does this data pipeline program do?
 TO BE ANSWERED WITH DIAGRAM 
-#### Refer to [its Github repo}(https://github.com/emma-jinger/cat_data) for more details.
+#### Refer to [its Github repo](https://github.com/emma-jinger/cat_data) for more details.
 
 ### Step 3: Build a web app that will present the data (Provide a link after deploying the web app?)
 
