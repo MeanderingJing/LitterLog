@@ -9,9 +9,9 @@ An AI program jetson-inference is utilized to recognize our cat through a camera
 *Note: This system is made, assuming that one litterbox is only used by one cat.* 
 
 ## What did I (the developer) do to develop this system?
-### Local setup (Version 1)
+### ***Local setup (Version 1)***
 
-#### Step 1: Write a program that uses image recognition to monitor the cat and log the data whenever the cat goes to the bathroom (diagram)
+### Step 1: Write a program that uses image recognition to monitor the cat and log the data whenever the cat goes to the bathroom (diagram)
 **Device used**: [The NVIDIA® Jetson Nano™ Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write)
 
 TO DO: UPLOAD the catWatcher Python code. 
@@ -27,8 +27,8 @@ TO DO: UPLOAD the catWatcher Python code.
 
 *A Sample of the CSV Data:*
 *TO DO: TO BE ATTACHED*
-#### Step 2: Set up a data pipeline that watches new data and load it to a database. (diagram)
-#### Step 3: Build a web app that will present the data (Provide a link after deploying the web app?)
+### Step 2: Set up a data pipeline that watches new data and load it to a database. (diagram)
+### Step 3: Build a web app that will present the data (Provide a link after deploying the web app?)
 
 ### Using Docker (Version 2)
 ## What skills did I demonstrate in making this system? 
