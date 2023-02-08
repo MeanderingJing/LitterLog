@@ -17,7 +17,7 @@ An AI program jetson-inference is utilized to recognize our cat through a camera
 TO DO: UPLOAD the catWatcher Python code. 
 
 **Dependent**: [jetson-inference library](https://github.com/dusty-nv/jetson-inference)
-##### What does this program do?
+#### What does this program do?
 *TO DO: Diagram to be attached*
 
 - Camera is constantly running in front of a cat litterbox.
