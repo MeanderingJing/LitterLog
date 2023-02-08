@@ -27,6 +27,7 @@ TO DO: UPLOAD the catWatcher Python code.
 
 *A Sample of the CSV Data:*
 *TO DO: TO BE ATTACHED*
+#### Refer to [its Github repo](https://github.com/emma-jinger/CatWatcher) for more details.
 ### Step 2: Set up a data pipeline that watches new data and load it to a database. (diagram)
 #### What does this data pipeline program do?
 TO BE ANSWERED WITH DIAGRAM 
