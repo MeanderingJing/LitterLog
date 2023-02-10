@@ -8,7 +8,7 @@ An AI program jetson-inference is utilized to recognize our cat through a camera
 
 *Note: This system is made, assuming that one litterbox is only used by one cat.* 
 
-## What did I (the developer) do to develop this system?
+## What did I do to develop this system?
 ### ***Local setup (Version 1)***
 
 ### Step 1: Write a program that uses image recognition to monitor the cat and log the data whenever the cat goes to the bathroom (diagram)
