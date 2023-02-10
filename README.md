@@ -12,18 +12,6 @@ An AI program jetson-inference is utilized to recognize our cat through a camera
 ### ***Local setup (Version 1)***
 
 ### Step 1: Write a program that uses image recognition to monitor the cat and log the data whenever the cat goes to the bathroom (diagram)
-**Device used**: [The NVIDIA® Jetson Nano™ Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write)
-**Dependent**: [jetson-inference library](https://github.com/dusty-nv/jetson-inference)
-#### What does this program do?
-*TO DO: Diagram to be attached*
-
-- Camera is constantly running in front of a cat litterbox.
-- Upon cat caught on camera, an email notification is sent to user.
-- Upon cat leaving the sight of camera, an email notification is sent to user.
-- Output CSV file recording the times when cat enters and exits the litterbox.
-
-*A Sample of the CSV Data:*
-*TO DO: TO BE ATTACHED*
 #### Refer to [its Github repo](https://github.com/emma-jinger/CatWatcher) for more details.
 ### Step 2: Set up a data pipeline that watches new data and load it to a database. (diagram)
 #### What does this data pipeline program do?
