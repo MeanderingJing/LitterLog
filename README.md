@@ -13,12 +13,10 @@ An AI program jetson-inference is utilized to recognize our cat through a camera
 
 ### Step 1: Write a program that automatically logs the times when a cat uses the litterbox
 #### Refer to [its Github repo](https://github.com/emma-jinger/CatWatcher) for more details.
-### Step 2: Set up a data pipeline that watches new data and load it to a database. (diagram)
-#### What does this data pipeline program do?
-TO BE ANSWERED WITH DIAGRAM 
+### Step 2: Set up a data pipeline that watches new data and load it to a database.
 #### Refer to [its Github repo](https://github.com/emma-jinger/cat_data) for more details.
 
 ### Step 3: Build a web app that will present the data (Provide a link after deploying the web app?)
 
-### Using Docker (Version 2)
+### ***Using Docker (Version 2)***
 ## What skills did I demonstrate in making this system? 
