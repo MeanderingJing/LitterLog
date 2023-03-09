@@ -11,7 +11,7 @@ An AI program jetson-inference is utilized to recognize our cat through a camera
 ## What did I do to develop this system?
 ### ***Local setup (Version 1)***
 
-### Step 1: Write a program that automatically logs the times when a cat uses the litterbox
+### Step 1: Develop a software application that is capable of automatically recording the timestamps corresponding to each instance of a cat using the litterbox.
 #### Refer to [its Github repo](https://github.com/emma-jinger/CatWatcher) for more details.
 ### Step 2: Set up a data pipeline that watches new data and load it to a database.
 #### Refer to [its Github repo](https://github.com/emma-jinger/cat_data) for more details.
