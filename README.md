@@ -18,7 +18,8 @@ This software application automatically records the timestamps corresponding to 
 The data pipeline watches new data and load it to a database. Design and implement a data pipeline that continuously monitors for incoming data and efficiently loads them into a designated database for further processing and analysis.
 #### Refer to [its Github repo](https://github.com/emma-jinger/cat_data) for more details.
 
-### Step 3: Build a web app that will present the data (Provide a link after deploying the web app?)
+### Step 3: Build a web app that will present the data
+#### Refer to [its Github repo](https://github.com/emma-jinger/cat_bathroom_monitoring_system_web_app) for more details.
 
 ### ***Using Docker (Version 2)***
 ## What skills did I demonstrate in making this system? 
