@@ -1,5 +1,5 @@
 
-# Cat Bathroom Monitoring System
+# LitterLog - The Cat Bathroom Monitoring System
 ## Introduction
 ### What is the purpose of the cat bathroom monitoring system?
 This project aims to improve the health and well-being of our family cat, Atticus by monitoring his bathroom behavior with a fully automated system. The idea of this project was formed when Atticus was diagnosed with urinary traction disease in 2019 and our vet suggested that we keep track of his bathroom habits.
