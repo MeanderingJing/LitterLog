@@ -4,3 +4,6 @@
 [submodule "LitterLog-DataPipeline"]
 	path = LitterLog-DataPipeline
 	url = https://github.com/emma-jinger/LitterLog-DataPipeline
+[submodule "LitterLog-WebApp"]
+	path = LitterLog-WebApp
+	url = https://github.com/emma-jinger/LitterLog-WebApp
