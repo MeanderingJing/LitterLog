@@ -1,6 +1,3 @@
-[submodule "LitterLogWebApp"]
-	path = LitterLogWebApp
-	url = https://github.com/emma-jinger/LitterLogWebApp
 [submodule "Litterlog-CatWatcher"]
 	path = Litterlog-CatWatcher
 	url = https://github.com/emma-jinger/Litterlog-CatWatcher
