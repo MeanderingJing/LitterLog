@@ -1,10 +1,11 @@
 
-# LitterLog - The Cat Bathroom Monitoring System
+# LitterLog - The Automatic Cat Bathroom Monitoring System
 ## Introduction
-### What is the purpose of the cat bathroom monitoring system?
+### What is the purpose of LitterLog?
 This project aims to improve the health and well-being of our family cat, Atticus, by monitoring his bathroom behavior with a fully automated system. The idea of this project was formed when Atticus was diagnosed with urinary traction disease in 2019 and our vet suggested that we keep track of his bathroom habits.
 
-To accomplish this, I developed a software program that harnesses the power of image recognition technology provided by the [jetson-inference library](https://github.com/dusty-nv/jetson-inference). The softtware integrates with a camera installed in front of Atticus' litterbox, allowing the system to record his entry and departure times whenever he uses the litterbox. The recorded data is then automatically processed and sent to a Postgres database through an efficient **ETL pipeline**. A data visualization service `Metabase` has also been set up to help us analyze the data, and we can view graphs of Atticus' bathroom behavior through a user-friendly web app.
+### What was done to serve the purpose?
+To accomplish this, I developed a software program that harnesses the power of image recognition technology provided by the [jetson-inference library](https://github.com/dusty-nv/jetson-inference). The software integrates with a camera installed in front of Atticus' litterbox, allowing the system to record his entry and departure times whenever he uses the litterbox. The recorded data is then automatically processed and sent to a Postgres database through an efficient **ETL pipeline**. A data visualization service `Metabase` has also been set up to help us analyze the data, and we can view graphs of Atticus' bathroom behavior through a user-friendly web app.
 
 *Note: This system is made, assuming that one litterbox is used by one cat.* 
 
