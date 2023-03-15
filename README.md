@@ -22,9 +22,6 @@ The data pipeline watches new data and load it to a database. Design and impleme
 ### Step 3: Build a web app that will present the data
 
 
-## What skills did I demonstrate in making this system? 
-To be continued...
-
 ## How to use this repo?
 
 Assuming the user (evdeloper) has a machine that fulfills the requirements for executing CatWatcher program (Or, if it doesn't, that's okay too. We'll skip this, and feed sample data from the data pipeline part.)
