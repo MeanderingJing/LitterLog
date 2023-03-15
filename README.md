@@ -12,19 +12,16 @@ LitterLog aims to improve the health and well-being of our family cat, Atticus, 
 *Note: This system is made, assuming that one litterbox is used by one cat.* 
 
 ## What did I do to develop this system?
-### ***Local setup (Version 1)***
 
 ### Step 1: Develop a computer vision software application 
 This software application automatically records the timestamps corresponding to each instance of a cat using the litterbox.
-#### Refer to [its Github repo](https://github.com/emma-jinger/CatWatcher) for more details.
+
 ### Step 2: Set up a data pipeline
 The data pipeline watches new data and load it to a database. Design and implement a data pipeline that continuously monitors for incoming data and efficiently loads them into a designated database for further processing and analysis.
-#### Refer to [its Github repo](https://github.com/emma-jinger/cat_data) for more details.
 
 ### Step 3: Build a web app that will present the data
-#### Refer to [its Github repo](https://github.com/emma-jinger/cat_bathroom_monitoring_system_web_app) for more details.
 
-### ***Using Docker (Version 2)***
+
 ## What skills did I demonstrate in making this system? 
 To be continued...
 
