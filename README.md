@@ -61,7 +61,7 @@ sudo ldconfig
 mkdir /home/$USER/cat_watcher_output
 cd ../LitterLog-CatWatcher
 pip3 install 
-python3 CatWatcher.py.
+python3 CatWatcher.py
 ```
 ### Make a directory (under your home directory) that the camera outputs data to: 
 ```
