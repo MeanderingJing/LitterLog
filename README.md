@@ -30,7 +30,7 @@ To be continued...
 
 ## How to use this repo?
 
-- Assuming the user (evdeloper) has a machine that fulfills the requirements for executing CatWatcher program (Or, if it doesn't, that's okay too. We'll skip this, and feed sample data from the data pipeline part.)
+Assuming the user (evdeloper) has a machine that fulfills the requirements for executing CatWatcher program (Or, if it doesn't, that's okay too. We'll skip this, and feed sample data from the data pipeline part.)
 
 ### Clone the repo
 ```
@@ -59,7 +59,8 @@ The script installs Postgres and creates a new database with a user and password
 ```
 mkdir /home/$USER/cat_watcher_output
 ```
-### Execute the CatWatcher program   
+### Execute the CatWatcher program  
+Note: This program import `dotenv`. Make sure that this package has been installed beforehand.  
 ```
 ./LitterLog-CatWatcher/CatWatcher.py
 ```
@@ -72,12 +73,13 @@ Now, the CatWatcher program should be running! In reality, it takes time before 
 cd LitterLog-DataPipeline
 pip install -e .
 ```
-### Create a `.env` file and add the directory we created earlier to the environment variable `CAT_DATA_DMZ`
+### Create a `.env` file 
+The `.env` file should be created under `CatDataSchema` under `LitterLog-DataPipeline`. In the `.env` file, add the directory we created earlier to the environment variable `CAT_DATA_DMZ`: 
 ```dotenv
 # CAT_DATA_DMZ defines what directory the LitterLog-DataPipeline is monitoring
 CAT_DATA_DMZ=/home/$USER/cat_watcher_output
 ``` 
-### Run the application cat_data_watcher to run the ETL pipeline
+### Run the application `cat_data_watcher` to run the ETL pipeline
 ```
 cat_data_watcher
 ```
