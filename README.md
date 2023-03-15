@@ -14,7 +14,7 @@ LitterLog aims to improve the health and well-being of our family cat, Atticus, 
 *Note: This system is made, assuming that one litterbox is used by one cat.* 
 
 
-## How to use this repo?
+## How to Use This Repo?
 
 Assuming the user (evdeloper) has a machine that fulfills the requirements for executing CatWatcher program (Or, if it doesn't, that's okay too. We'll skip this, and feed sample data from the data pipeline part.)
 
@@ -24,6 +24,7 @@ To download the code, navigate to a folder of your choosing on the your machine.
 sudo apt update
 sudo apt install git nodejs npm
 ```
+
 Then, clone the `LitterLog` project: 
 ```
 git clone --recursive https://github.com/emma-jinger/LitterLog 
@@ -45,8 +46,23 @@ sudo bash ./db-setup.sh
 The script installs Postgres and creates a new database with a user and password specified in the provided .env file.
 
 
-
 ### Clone jetson-inference and build it from source (Can I make it into a bash script as part of the above repo?)
+```
+sudo apt-get update
+sudo apt-get install git cmake libpython3-dev python3-numpy
+git clone --recursive https://github.com/dusty-nv/jetson-inference
+cd jetson-inference
+mkdir build
+cd build
+cmake ../
+make -j$(nproc)
+sudo make install
+sudo ldconfig
+mkdir /home/$USER/cat_watcher_output
+cd ../LitterLog-CatWatcher
+pip3 install 
+python3 CatWatcher.py
+```
 ### Make a directory (under your home directory) that the camera outputs data to: 
 ```
 mkdir /home/$USER/cat_watcher_output
