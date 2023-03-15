@@ -6,7 +6,9 @@ LitterLog aims to improve the health and well-being of our family cat, Atticus, 
 
 ### What has been done to serve the purpose of LitterLog?
 - I have **developed a software program** that harnesses the power of object detection technology provided by the [jetson-inference library](https://github.com/dusty-nv/jetson-inference). The software integrates with a camera placed in front of Atticus' litterbox, allowing the system to record his entry and departure times whenever he uses the litterbox. 
+
 - Then, I have **designed and implemented a data pipeline** that continuously monitors for incoming data and efficiently loads them into a designated database for further processing and analysis.
+
 - Finally, to enable easy analysis of this data, I have also **designed and developed a user-friendly web app** that displays graphs of Atticus' bathroom behavior.
 
 *Note: This system is made, assuming that one litterbox is used by one cat.* 
