@@ -65,13 +65,18 @@ mkdir /home/$USER/cat_watcher_output
 ```
 ### Thoughts: The above three steps: Can I make a bash script that will clone jetson-inference, build it, and execute the CatWatcher program? Yes
 
-Now, the CatWatcher program should be running! 
+Now, the CatWatcher program should be running! In reality, it takes time before we get any data from the CatWatcher program. I will provide a sample csv file with recorded data to test the following data pipeline. 
 
 ### Install the cat data pipeline package 
 ```
 cd LitterLog-DataPipeline
 pip install -e .
 ```
+### Create a `.env` file and add the directory we created earlier to the environment variable `CAT_DATA_DMZ`
+```dotenv
+# CAT_DATA_DMZ defines what directory the LitterLog-DataPipeline is monitoring
+CAT_DATA_DMZ=/home/$USER/cat_watcher_output
+``` 
 ### Run the application cat_data_watcher to run the ETL pipeline
 ```
 cat_data_watcher
