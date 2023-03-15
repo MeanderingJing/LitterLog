@@ -19,6 +19,12 @@ LitterLog aims to improve the health and well-being of our family cat, Atticus, 
 Assuming the user (evdeloper) has a machine that fulfills the requirements for executing CatWatcher program (Or, if it doesn't, that's okay too. We'll skip this, and feed sample data from the data pipeline part.)
 
 ### Clone the repo
+To download the code, navigate to a folder of your choosing on the your machine. First, make sure git, Node.js, and npm are installed:
+```
+sudo apt update
+sudo apt install git nodejs npm
+```
+Then, clone the `LitterLog` project: 
 ```
 git clone --recursive https://github.com/emma-jinger/LitterLog 
 ``` 
@@ -70,3 +76,11 @@ CAT_DATA_DMZ=/home/$USER/cat_watcher_output
 cat_data_watcher
 ```
 *Note: cat_data_watcher can be [set up as a service](https://github.com/emma-jinger/Set-Up-a-Service-on-Ubuntu) so that this app will always be running in the background.*
+
+### Install dependencies and run the web server
+Go to the directory ...
+```
+npm install
+npm start
+```
+Now you should be able to see the web app with this address http://locahost:5001 on your browser.
