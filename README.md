@@ -7,9 +7,9 @@ LitterLog aims to improve the health and well-being of our family cat, Atticus, 
 ### What has been done for the development of LitterLog?
 - I have **developed [a software program](https://github.com/emma-jinger/Litterlog-CatWatcher/tree/aadfa7eb1b7098925f2a8226d23947514a762ee3)** that harnesses the power of object detection technology provided by the [jetson-inference library](https://github.com/dusty-nv/jetson-inference). The software integrates with a camera placed in front of Atticus' litterbox, allowing the system to record his entry and departure times whenever he uses the litterbox. 
 
-- Then, I have **designed and implemented a data pipeline** that continuously monitors for incoming data and efficiently loads them into a designated database for further processing and analysis.
+- Then, I have **designed and implemented [a data pipeline](https://github.com/emma-jinger/LitterLog-DataPipeline/tree/d4c44f7470c6349ac62e4717515655d85f31f98c)** that continuously monitors for incoming data and efficiently loads them into a designated database for further processing and analysis.
 
-- Finally, to enable easy analysis of this data, I have also **designed and developed a user-friendly web app** that displays graphs of Atticus' bathroom behavior.
+- Finally, to enable easy analysis of this data, I have also **designed and developed [a user-friendly web app](https://github.com/emma-jinger/LitterLog-WebApp/tree/65c07feef6b9cb3ee439a9bd975c53307aaee43e)** that displays graphs of Atticus' bathroom behavior.
 
 *Note: This system is made, assuming that one litterbox is used by one cat.* 
 
