@@ -16,7 +16,7 @@ LitterLog aims to improve the health and well-being of our family cat, Atticus, 
 
 ## How to Use This Repo?
 
-Assuming the user (evdeloper) has a machine that fulfills the requirements for executing CatWatcher program (Or, if it doesn't, that's okay too. We'll skip this, and feed sample data from the data pipeline part.)
+Assuming the user (developer) has a machine that fulfills the requirements for executing CatWatcher program (Or, if it doesn't, that's okay too. We'll skip this, and feed sample data from the data pipeline part.)
 
 ### Clone the repo
 To download the code, navigate to a folder of your choosing on the your machine. First, make sure git, Node.js, and npm are installed:
@@ -24,6 +24,7 @@ To download the code, navigate to a folder of your choosing on the your machine.
 sudo apt update
 sudo apt install git nodejs npm
 ```
+*Note: `nodejs` and `npm` are installed for the web app in the end.*
 
 Then, clone the `LitterLog` project: 
 ```
