@@ -4,7 +4,7 @@
 ### What is the purpose of LitterLog?
 LitterLog aims to improve the health and well-being of our family cat, Atticus, by monitoring his bathroom behavior with a fully automated system. The idea of this project was formed when Atticus was diagnosed with urinary traction disease in 2019 and our vet suggested that we keep track of his bathroom habits.
 
-### What has been done to serve the purpose of LitterLog?
+### What has been done for the development of LitterLog?
 - I have **developed a software program** that harnesses the power of object detection technology provided by the [jetson-inference library](https://github.com/dusty-nv/jetson-inference). The software integrates with a camera placed in front of Atticus' litterbox, allowing the system to record his entry and departure times whenever he uses the litterbox. 
 
 - Then, I have **designed and implemented a data pipeline** that continuously monitors for incoming data and efficiently loads them into a designated database for further processing and analysis.
@@ -24,7 +24,7 @@ To download the code, navigate to a folder of your choosing on the your machine.
 sudo apt update
 sudo apt install git nodejs npm
 ```
-*Note: `nodejs` and `npm` are installed for the web app in the end.*
+*Note: `nodejs` and `npm` are installed for the web app.*
 
 Then, clone the `LitterLog` project: 
 ```
@@ -47,7 +47,7 @@ sudo bash ./db-setup.sh
 The script installs Postgres and creates a new database with a user and password specified in the provided .env file.
 
 
-### Clone jetson-inference and build it from source (Can I make it into a bash script as part of the above repo?)
+### Clone `jetson-inference` and build it from source
 ```
 sudo apt-get update
 sudo apt-get install git cmake libpython3-dev python3-numpy
@@ -59,10 +59,6 @@ cmake ../
 make -j$(nproc)
 sudo make install
 sudo ldconfig
-mkdir /home/$USER/cat_watcher_output
-cd ../LitterLog-CatWatcher
-pip3 install 
-python3 CatWatcher.py
 ```
 ### Make a directory (under your home directory) that the camera outputs data to: 
 ```
@@ -71,7 +67,7 @@ mkdir /home/$USER/cat_watcher_output
 ### Execute the CatWatcher program  
 Note: This program import `dotenv`. Make sure that this package has been installed beforehand.  
 ```
-./LitterLog-CatWatcher/CatWatcher.py
+python3 ./LitterLog-CatWatcher/CatWatcher.py
 ```
 ### Thoughts: The above three steps: Can I make a bash script that will clone jetson-inference, build it, and execute the CatWatcher program? Yes
 
