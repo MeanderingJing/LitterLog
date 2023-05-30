@@ -69,9 +69,8 @@ Note: This program import `dotenv`. Make sure that this package has been install
 ```
 python3 ./LitterLog-CatWatcher/CatWatcher.py
 ```
-### Thoughts: The above three steps: Can I make a bash script that will clone jetson-inference, build it, and execute the CatWatcher program? Yes
-
 Now, the CatWatcher program should be running! In reality, it takes time before we get any data from the CatWatcher program. I will provide a sample csv file with recorded data to test the following data pipeline. 
+
 
 ### Install the cat data pipeline package 
 ```
