@@ -15,30 +15,38 @@ LitterLog aims to improve the health and well-being of our family cat, Atticus, 
 
 
 ## How to Use This Repo?
-
 Assuming the user (developer) has a machine that fulfills the requirements for executing CatWatcher program (Or, if it doesn't, that's okay too. We'll skip this, and feed sample data from the data pipeline part.)
 
-### Clone the repo
-To download the code, navigate to a folder of your choosing on the your machine. First, make sure git, Node.js, and npm are installed:
+### Make a new directory to work with
+```
+mkdir YOUR_LITTERLOG_WORKING_DIR
+cd YOUR_LITTERLOG_WORKING_DIR
+```
+### Set up a virtual env on the server (optional)
+Create a virtual environment `venv` using the command `python3 -m venv venv`
+Activate it using the command `source venv/bin/activate`
+
+### make sure git, Node.js, and npm are installed
 ```
 sudo apt update
 sudo apt install git nodejs npm
 ```
 *Note: `nodejs` and `npm` are installed for the web app.*
 
-Then, clone the `LitterLog` project: 
+### Clone the repo
 ```
 git clone --recursive https://github.com/emma-jinger/LitterLog 
 ``` 
 Note: the `--recursive` option is used to clone the parent repository along with all its submodules, and initialize and update them automatically.
 
 ### Set up the postgres database
-Create a `.env` file, with the following information: 
+First, change directory to the Root directory of the repo with the command: `cd LitterLog`.<br>
+Then, create a `.env` file, with the following information: 
 ```
 DB_USER=your_db_user
 DB_PASSWORD=your_db_pw
 DB_NAME=your_db_db
-PG_VERSION=14.7
+PG_VERSION=14.8
 ```
 Please modify the values for `DB_USER`, `DB_PASSWORD`, and `DB_NAME`. Then run the script with: 
 ```
