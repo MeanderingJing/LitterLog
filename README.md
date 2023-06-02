@@ -17,21 +17,17 @@ LitterLog aims to improve the health and well-being of our family cat, Atticus, 
 ## How to Use This Repo?
 Assuming the user (developer) has a machine that fulfills the requirements for executing CatWatcher program (Or, if it doesn't, that's okay too. We'll skip this, and feed sample data from the data pipeline part.)
 
-### Make a new directory to work with
+## Clone the Repo
+### Make a new working directory
 ```
-mkdir YOUR_LITTERLOG_WORKING_DIR
-cd YOUR_LITTERLOG_WORKING_DIR
+mkdir <YOUR_LITTERLOG_WORKING_DIR>
+cd <YOUR_LITTERLOG_WORKING_DIR>
 ```
-### Set up a virtual env on the server (optional)
-Create a virtual environment `venv` using the command `python3 -m venv venv`
+
+### Set up a virtual environment on the server (optional)
+Create a virtual environment `venv` using the command `python3 -m venv venv` <br>
 Activate it using the command `source venv/bin/activate`
 
-### make sure git, Node.js, and npm are installed
-```
-sudo apt update
-sudo apt install git nodejs npm
-```
-*Note: `nodejs` and `npm` are installed for the web app.*
 
 ### Clone the repo
 ```
@@ -39,22 +35,7 @@ git clone --recursive https://github.com/emma-jinger/LitterLog
 ``` 
 Note: the `--recursive` option is used to clone the parent repository along with all its submodules, and initialize and update them automatically.
 
-### Set up the postgres database
-First, change directory to the Root directory of the repo with the command: `cd LitterLog`.<br>
-Then, create a `.env` file, with the following information: 
-```
-DB_USER=your_db_user
-DB_PASSWORD=your_db_pw
-DB_NAME=your_db_db
-PG_VERSION=14.8
-```
-Please modify the values for `DB_USER`, `DB_PASSWORD`, and `DB_NAME`. Then run the script with: 
-```
-sudo bash ./db-setup.sh
-```
-The script installs Postgres and creates a new database with a user and password specified in the provided .env file.
-
-
+## Set Up the CatWatcher Program to Monitor the litterbox 
 ### Clone `jetson-inference` and build it from source
 ```
 sudo apt-get update
@@ -79,6 +60,21 @@ python3 ./LitterLog-CatWatcher/CatWatcher.py
 ```
 Now, the CatWatcher program should be running! In reality, it takes time before we get any data from the CatWatcher program. I will provide a sample csv file with recorded data to test the following data pipeline. 
 
+## Set Up the Cat Data Pipeline
+### Set up the postgres database
+First, change directory to the Root directory of the repo with the command: `cd LitterLog`.<br>
+Then, create a `.env` file, with the following information: 
+```
+DB_USER=your_db_user
+DB_PASSWORD=your_db_pw
+DB_NAME=your_db_db
+PG_VERSION=14.8
+```
+Please modify the values for `DB_USER`, `DB_PASSWORD`, and `DB_NAME`. Then run the script with: 
+```
+sudo bash ./db-setup.sh
+```
+The script installs Postgres and creates a new database with a user and password specified in the provided .env file.
 
 ### Install the cat data pipeline package 
 ```
@@ -91,11 +87,20 @@ The `.env` file should be created under `CatDataSchema` under `LitterLog-DataPip
 # CAT_DATA_DMZ defines what directory the LitterLog-DataPipeline is monitoring
 CAT_DATA_DMZ=/home/$USER/cat_watcher_output
 ``` 
+
 ### Run the application `cat_data_watcher` to run the ETL pipeline
 ```
 cat_data_watcher
 ```
 *Note: cat_data_watcher can be [set up as a service](https://github.com/emma-jinger/Set-Up-a-Service-on-Ubuntu) so that this app will always be running in the background.*
+
+## Set Up the Web App 
+### Make sure `git`, `Node.js`, and `npm` are installed
+```
+sudo apt update
+sudo apt install git nodejs npm
+```
+*Note: `nodejs` and `npm` are installed for the web app.*
 
 ### Install dependencies and run the web server
 Go to the directory ...
