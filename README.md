@@ -28,7 +28,6 @@ cd <YOUR_LITTERLOG_WORKING_DIR>
 Create a virtual environment `venv` using the command `python3 -m venv venv` <br>
 Activate it using the command `source venv/bin/activate`
 
-
 ### Clone the repo
 ```
 git clone --recursive https://github.com/emma-jinger/LitterLog 
@@ -49,10 +48,12 @@ make -j$(nproc)
 sudo make install
 sudo ldconfig
 ```
+
 ### Make a directory (under your home directory) that the camera outputs data to: 
 ```
 mkdir /home/$USER/cat_watcher_output
 ```
+
 ### Execute the CatWatcher program  
 Note: This program import `dotenv`. Make sure that this package has been installed beforehand.  
 ```
@@ -81,6 +82,7 @@ The script installs Postgres and creates a new database with a user and password
 cd LitterLog-DataPipeline
 pip install -e .
 ```
+
 ### Create a `.env` file 
 The `.env` file should be created under `CatDataSchema` under `LitterLog-DataPipeline`. In the `.env` file, add the directory we created earlier to the environment variable `CAT_DATA_DMZ`: 
 ```dotenv
