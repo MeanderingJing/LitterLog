@@ -34,7 +34,7 @@ git clone --recursive https://github.com/emma-jinger/LitterLog
 ``` 
 Note: the `--recursive` option is used to clone the parent repository along with all its submodules, and initialize and update them automatically.
 
-## Set Up the CatWatcher Program to Monitor the litterbox 
+## Set Up the CatWatcher Program to Monitor the Litterbox 
 ### Clone `jetson-inference` and build it from source
 ```
 sudo apt-get update
@@ -49,10 +49,12 @@ sudo make install
 sudo ldconfig
 ```
 
-### Make a directory (under your home directory) that the camera outputs data to: 
+### Make a directory under your home directory that the camera outputs data to: 
 ```
 mkdir /home/$USER/cat_watcher_output
 ```
+The CatWatcher program is currently configured to output data to this directory. 
+(For my own reference, check if this directory is mounted to the directory `/var/nfs/cat_watcher_output` and how it was done.)
 
 ### Execute the CatWatcher program  
 Note: This program import `dotenv`. Make sure that this package has been installed beforehand.  
@@ -77,7 +79,7 @@ sudo bash ./db-setup.sh
 ```
 The script installs Postgres and creates a new database with a user and password specified in the provided .env file.
 
-### Install the cat data pipeline package 
+### Install the cat data pipeline package - `CatDataSchema`
 ```
 cd LitterLog-DataPipeline
 pip install -e .
