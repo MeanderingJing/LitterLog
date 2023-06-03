@@ -71,7 +71,7 @@ if sudo -u postgres psql -lqt | cut -d \| -f 1 | grep -qw $DB_NAME; then
     echo "Database $DB_NAME already exists"
 else
     echo "Creating database $DB_NAME..."
-    sudo -u postgres psql -c "CREATE DATABASE $DB_NAME;" 
+    sudo -u postgres psql -c "CREATE DATABASE $DB_NAME OWNER $DB_USER;" 
 fi
 
 # Grant privileges to user
@@ -87,4 +87,4 @@ else
 fi
 
 
-# This script tested to work 20230314 
+# This script tested to work 20230602
