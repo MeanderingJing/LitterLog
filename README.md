@@ -90,6 +90,8 @@ The `.env` file should be created under `CatDataSchema` under `LitterLog-DataPip
 ```dotenv
 # CAT_DATA_DMZ defines what directory the LitterLog-DataPipeline is monitoring
 CAT_DATA_DMZ=/home/$USER/cat_watcher_output
+# DATABASE_URL defines where the data pipeline will load the data retrieved
+DATABASE_URL = YOUR_DATABASE_URL
 ``` 
 
 ### Run the application `cat_data_watcher` to run the ETL pipeline
