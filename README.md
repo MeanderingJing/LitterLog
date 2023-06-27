@@ -70,14 +70,14 @@ Then, create a `.env` file, with the following information:
 ```
 DB_USER=your_db_user
 DB_PASSWORD=your_db_pw
-DB_NAME=your_db_db
+DB_NAME=your_db
 PG_VERSION=14.8
 ```
 Please modify the values for `DB_USER`, `DB_PASSWORD`, and `DB_NAME`. Then run the script with: 
 ```
 sudo bash ./db-setup.sh
 ```
-The script installs Postgres and creates a new database with a user and password specified in the provided .env file.
+The script installs `Postgres` and creates a new database with a user and password specified in the provided `.env` file.
 
 ### Install the cat data pipeline package - `CatDataSchema`
 ```
