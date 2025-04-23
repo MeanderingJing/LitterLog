@@ -1,5 +1,5 @@
 
-# LitterLog - The Fully Automated Cat Bathroom Monitoring System
+# LitterLog - The Fully Automated Litter Box Monitoring System
 ## Introduction
 ### What is the purpose of LitterLog?
 LitterLog aims to improve the health and well-being of our family cat, Atticus, by monitoring his bathroom behavior with a fully automated system. The idea of this project was formed when Atticus was diagnosed with urinary traction disease in 2019 and our vet suggested that we keep track of his bathroom habits.
