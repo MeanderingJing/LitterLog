@@ -2,7 +2,7 @@
 # LitterLog - The Fully Automated Litter Box Monitoring System
 ## Introduction
 ### What is the purpose of LitterLog?
-LitterLog aims to improve the health and well-being of our family cat, Atticus, by monitoring his bathroom behavior with a fully automated system. The idea of this project was formed when Atticus was diagnosed with urinary traction disease in 2019 and our vet suggested that we keep track of his bathroom habits.
+LitterLog aims to improve the health and well-being of our family cat, Atticus, by monitoring his bathroom behavior with a fully automated system. The idea of this project was formed when Atticus was diagnosed with urinary traction disease and our vet suggested that we keep track of his bathroom habits.
 
 ### What has been done for the development of LitterLog?
 - I have **developed [a software program](https://github.com/emma-jinger/Litterlog-CatWatcher/tree/aadfa7eb1b7098925f2a8226d23947514a762ee3)** that harnesses the power of object detection technology provided by the [jetson-inference library](https://github.com/dusty-nv/jetson-inference). The software integrates with a camera placed in front of Atticus' litterbox, allowing the system to record his entry and departure times whenever he uses the litterbox. 
